@@ -1,0 +1,249 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	background: #f2f2f2
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+h1
+	font-size: 60px
+
+h2
+	font-size: 30px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+a
+	color: white
+	text-decoration: none
+
+
+
+b, strong
+	font-weight: bold
+
+.header
+	min-width: 100vh
+	min-height: 469px
+	background-position: top center
+	background-size: cover
+	background: #63d0e4
+	background-image: url(../img/poligon.png)
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		li
+			display: inline-block
+
+.top_line
+	padding-top: 40px
+
+.lang
+	a
+		text-decoration: none
+		border-bottom: 1px dashed #fff
+		&:hover
+			color: #fff
+
+.email
+	color: #fff
+
+.logo
+	display: block
+
+.phone
+	color: #fff
+
+.sign
+	a
+		color: #fff
+		text-decoration: none
+		margin-left: 5px
+		margin: -10px
+		padding-top: 8px
+		padding-bottom: 8px
+		padding-left: 20px
+		padding-right: 20px
+		background: linear-gradient(45deg, #ff6600 40%, #fff 120%)
+		&:hover
+			background: #ff6600
+
+
+.register
+	a
+		color: #fff
+		text-decoration: none
+		margin: -10px
+		padding-top: 8px
+		padding-bottom: 8px
+		padding-left: 20px
+		padding-right: 20px
+		background: linear-gradient(45deg, #ff6600 40%, #fff 120%)
+		&:hover
+			background: #ff6600
+
+
+.menu
+	padding-top: 40px
+	padding-bottom: 40px
+	a
+		margin-right: 20px
+		&:hover
+			color: white
+			border-bottom: solid 2px #fff
+			text-decoration: none
+
+.content_header
+	color: #fff
+	p
+		font-size: 40px
+
+.content_img
+	margin-left: -126px
+	margin-top: 150px
+
+.circle
+	height: 60px
+	width: 60px
+	color: #fff
+	background-image: url(../img/Circle.png)
+	background-repeat: no-repeat
+	p
+		text-align: center
+		padding-top: 6px
+		font-size: 30px
+
+
+.content_text
+	margin-top: 100px
+	b
+		font-size: 30px
+	p
+		font-size: 40px
+		padding-top: 40px
+
+.text
+	margin-left: 100px
+
+.page_2
+	background: #fff
+
+.pd
+	margin-top: 74px
+
+.sk_1
+	text-align: right
+	font-size: 100px
+
+.sk_2
+	font-size: 100px
+	margin-top: 64px
+
+.zag
+	b
+		font-size: 30px
+	p
+		font-size: 40px
+
+.carusel_item
+	padding: 0
+	border: 0px
+	margin: 0px
+	height: 500px
+	width: 470px
+	display: inline-block
+	background-image: url(../img/car.png)
+	background-size: cover
+
+.carusel_text
+	margin-left: 50px
+	h1
+		margin-left: 86px
+		color: #fff
+
+	h3
+		margin-left: 130px
+		padding-top: 30px
+		color: #fff
+		font-size: 30px
+	p
+		margin-top: 60px
+		line-height: 50px
+		margin-left: 60px
+
+.bcar
+	margin-left: 76px
+	a
+		color: #fff
+		text-decoration: none
+		margin-left: 5px
+
+		padding-top: 12px
+		padding-bottom: 8px
+		padding-left: 20px
+		padding-right: 20px
+		background: linear-gradient(45deg, #ff6600 40%, #fff 120%)
+		&:hover
+			background: #ff6600
+
+
+
+.footer
+	height: 190px
+	width: 100%
+	background: #19acc5
+	ul
+		li
+			list-style: none
+
+			margin-left: -10px
+			margin-top: 4px
+			a
+				&:hover
+					border-bottom: solid 1px #fff
+					text-decoration: none
+					color: #fff
+
+
+	img
+		margin: 3px 1.5px
+		width: 25px
+		height: 25px
+		color: #19acc5
+		background: #fff
+
+.block
+	align-items: center
+	color: #fff
+
+@import "media" // Always at the end
